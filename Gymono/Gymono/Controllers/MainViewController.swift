@@ -7,9 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    
-    @IBOutlet weak var tableView:UITableView!
+class MainViewController: BaseViewController {
     
     var mainViewModel: MainViewModel?
     

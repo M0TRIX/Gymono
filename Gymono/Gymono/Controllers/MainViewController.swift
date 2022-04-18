@@ -16,10 +16,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mainViewModel = MainViewModel(context: self)
+        getListOfExersices()
     }
     
     func getListOfExersices(){
-        mainViewModel?.getExersises(complition: {[weak self] _ in
+        mainViewModel?.getExersiceInfo(complition: {[weak self] _ in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -34,11 +35,11 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.mainViewModel?.exerciseList?.count ?? 0
+        return self.mainViewModel?.exerciseList?.results?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "exersiceTableViewCell",for:indexPath) as! ExersiceTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exersiceTableViewCell",for:indexPath) as! ExersiceInfoTableViewCell
         cell.currentController = self
         cell.bind(object: self.mainViewModel?.exerciseList?.results?[indexPath.row] ?? "")
         return cell

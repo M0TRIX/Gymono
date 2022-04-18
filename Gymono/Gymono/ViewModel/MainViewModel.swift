@@ -12,7 +12,7 @@ class MainViewModel {
     
     var controller:MainViewController?
     
-    var exerciseList:Exercise?
+    var exerciseList:ExerciseInfo?
     
     init(context:MainViewController) {
         self.controller = context
@@ -20,20 +20,20 @@ class MainViewModel {
     
     init() {}
     
-    func getExersises(complition:@escaping(Exercise)->()){
+    func getExersiceInfo(complition:@escaping(ExerciseInfo)->()){
         
-        ServiceApi.shared.getListOfExersises { [weak self] exersice,response,data  in
+        ServiceApi.shared.getListOfExersiceInfo { [weak self] exersice,response,data  in
             
             let error = ServiceValidator.checkResposnse(response: response, data: data)
             
             if error == ServiceError.SUCCESS {
-                self?.exerciseList?.results?.removeAll()
+                self?.exerciseList = ExerciseInfo()
                 self?.exerciseList?.results = []
+                self?.exerciseList?.results = exersice.results
                 complition(exersice)
             }else{
                 MessageUtill.makeMessage(title: "Network call error", body: "\(error)", controller: self?.controller ?? UIViewController())
             }
         }
     }
-
 }

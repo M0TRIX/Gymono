@@ -10,8 +10,8 @@ import UIKit
 class ImageTools{
     
    static func loadMyImage(urlString : String)->UIImage {
-         let url = URL(string: urlString)
-            if let data = try? Data(contentsOf: url!) {
+       guard let url = URL(string: urlString) else {return UIImage()}
+       if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                         return image
                 }

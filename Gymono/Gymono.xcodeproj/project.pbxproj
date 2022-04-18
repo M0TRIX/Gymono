@@ -31,7 +31,7 @@
 		E07F7D54280AE2BB000C4890 /* ExercisesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */; };
 		E07F7D56280AE30A000C4890 /* ExerciseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F7D55280AE30A000C4890 /* ExerciseImage.swift */; };
 		E0A116BF280C2DF8004DCB41 /* ExerciseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */; };
-		E0A116C1280C31F0004DCB41 /* ExersiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116C0280C31F0004DCB41 /* ExersiceTableViewCell.swift */; };
+		E0A116C1280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 		E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesInfo.swift; sourceTree = "<group>"; };
 		E07F7D55280AE30A000C4890 /* ExerciseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImage.swift; sourceTree = "<group>"; };
 		E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfo.swift; sourceTree = "<group>"; };
-		E0A116C0280C31F0004DCB41 /* ExersiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceTableViewCell.swift; sourceTree = "<group>"; };
+		E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E0301F8E2809FB6300E6FAE0 /* Base */,
-				E0A116C0280C31F0004DCB41 /* ExersiceTableViewCell.swift */,
+				E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,8 +232,8 @@
 			children = (
 				E0301FA02809FBF600E6FAE0 /* Exercise.swift */,
 				E0301F9D2809FBF500E6FAE0 /* Exercises.swift */,
-				E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */,
 				E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */,
+				E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */,
 				E07F7D55280AE30A000C4890 /* ExerciseImage.swift */,
 			);
 			path = Common;
@@ -387,7 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0301F712809FB1700E6FAE0 /* ServiceError.swift in Sources */,
-				E0A116C1280C31F0004DCB41 /* ExersiceTableViewCell.swift in Sources */,
+				E0A116C1280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift in Sources */,
 				E0301FAD2809FC3900E6FAE0 /* MainViewController.swift in Sources */,
 				E07F7D56280AE30A000C4890 /* ExerciseImage.swift in Sources */,
 				E0301FA32809FBF600E6FAE0 /* Exercise.swift in Sources */,

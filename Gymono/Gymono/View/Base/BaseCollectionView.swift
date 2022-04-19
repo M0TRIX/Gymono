@@ -12,7 +12,5 @@ class BaseCollectionView:UICollectionViewCell{
     
     var currentController:UIViewController?
     
-    func bind(object:Any){
-        
-    }
+    func bind(object:Any){}
 }

@@ -24,11 +24,11 @@
 		E0301F802809FB3600E6FAE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F792809FB3600E6FAE0 /* Colors.swift */; };
 		E0301F812809FB3600E6FAE0 /* MessageUtill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F7B2809FB3600E6FAE0 /* MessageUtill.swift */; };
 		E0301F9A2809FB6400E6FAE0 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F8F2809FB6300E6FAE0 /* BaseTableViewCell.swift */; };
-		E0301FA12809FBF600E6FAE0 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F9D2809FBF500E6FAE0 /* Exercises.swift */; };
-		E0301FA32809FBF600E6FAE0 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301FA02809FBF600E6FAE0 /* Exercise.swift */; };
 		E0301FA62809FC1E00E6FAE0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301FA52809FC1E00E6FAE0 /* MainViewModel.swift */; };
 		E0301FAD2809FC3900E6FAE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301FAA2809FC3800E6FAE0 /* MainViewController.swift */; };
 		E03F6E64280E0B51006F8E2B /* VariationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03F6E63280E0B51006F8E2B /* VariationsTableViewCell.swift */; };
+		E063EA69280ECB110063D645 /* ExersiceDetialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */; };
+		E063EA6B280EE87F0063D645 /* VariationDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA6A280EE87F0063D645 /* VariationDetialViewController.swift */; };
 		E07AEFD6280D7F5C00E4A11B /* ExerciseDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFD5280D7F5C00E4A11B /* ExerciseDetialViewController.swift */; };
 		E07AEFD8280D7FF400E4A11B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFD7280D7FF400E4A11B /* BaseViewController.swift */; };
 		E07AEFDC280D9B1300E4A11B /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFDB280D9B1300E4A11B /* BaseCollectionView.swift */; };
@@ -78,11 +78,11 @@
 		E0301F792809FB3600E6FAE0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E0301F7B2809FB3600E6FAE0 /* MessageUtill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUtill.swift; sourceTree = "<group>"; };
 		E0301F8F2809FB6300E6FAE0 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		E0301F9D2809FBF500E6FAE0 /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
-		E0301FA02809FBF600E6FAE0 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		E0301FA52809FC1E00E6FAE0 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E0301FAA2809FC3800E6FAE0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E03F6E63280E0B51006F8E2B /* VariationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsTableViewCell.swift; sourceTree = "<group>"; };
+		E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceDetialViewModel.swift; sourceTree = "<group>"; };
+		E063EA6A280EE87F0063D645 /* VariationDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationDetialViewController.swift; sourceTree = "<group>"; };
 		E07AEFD5280D7F5C00E4A11B /* ExerciseDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetialViewController.swift; sourceTree = "<group>"; };
 		E07AEFD7280D7FF400E4A11B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E07AEFDB280D9B1300E4A11B /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
@@ -242,8 +242,6 @@
 		E0301F9C2809FBF500E6FAE0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E0301FA02809FBF600E6FAE0 /* Exercise.swift */,
-				E0301F9D2809FBF500E6FAE0 /* Exercises.swift */,
 				E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */,
 				E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */,
 				E07F7D55280AE30A000C4890 /* ExerciseImage.swift */,
@@ -255,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				E0301FA52809FC1E00E6FAE0 /* MainViewModel.swift */,
+				E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -265,6 +264,7 @@
 				E07AEFD7280D7FF400E4A11B /* BaseViewController.swift */,
 				E0301FAA2809FC3800E6FAE0 /* MainViewController.swift */,
 				E07AEFD5280D7F5C00E4A11B /* ExerciseDetialViewController.swift */,
+				E063EA6A280EE87F0063D645 /* VariationDetialViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 				E0A116C1280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift in Sources */,
 				E0301FAD2809FC3900E6FAE0 /* MainViewController.swift in Sources */,
 				E07F7D56280AE30A000C4890 /* ExerciseImage.swift in Sources */,
-				E0301FA32809FBF600E6FAE0 /* Exercise.swift in Sources */,
+				E063EA6B280EE87F0063D645 /* VariationDetialViewController.swift in Sources */,
 				E07AEFD8280D7FF400E4A11B /* BaseViewController.swift in Sources */,
 				E0301F802809FB3600E6FAE0 /* Colors.swift in Sources */,
 				E0301F9A2809FB6400E6FAE0 /* BaseTableViewCell.swift in Sources */,
@@ -432,10 +432,10 @@
 				E0301F6C2809FAEE00E6FAE0 /* CheckResponse.swift in Sources */,
 				E07F7D54280AE2BB000C4890 /* ExercisesInfo.swift in Sources */,
 				E0301F7F2809FB3600E6FAE0 /* Extenstions.swift in Sources */,
-				E0301FA12809FBF600E6FAE0 /* Exercises.swift in Sources */,
 				E0A116BF280C2DF8004DCB41 /* ExerciseInfo.swift in Sources */,
 				E0301FA62809FC1E00E6FAE0 /* MainViewModel.swift in Sources */,
 				E0301F812809FB3600E6FAE0 /* MessageUtill.swift in Sources */,
+				E063EA69280ECB110063D645 /* ExersiceDetialViewModel.swift in Sources */,
 				E03F6E64280E0B51006F8E2B /* VariationsTableViewCell.swift in Sources */,
 				E0301F702809FB1700E6FAE0 /* ServiceApi.swift in Sources */,
 				E0301F7E2809FB3600E6FAE0 /* ViewExtenstions.swift in Sources */,

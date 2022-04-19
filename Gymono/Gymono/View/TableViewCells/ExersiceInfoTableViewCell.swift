@@ -32,6 +32,7 @@ class ExersiceInfoTableViewCell:BaseTableViewCell{
     override func forwardAction() {
         let vc = ExerciseDetialViewController.createInstance()
         vc.exercisesInfoList = content
+        vc.exercisesViewModel = ExersiceDetailViewModel(context: vc)
         vc.modalPresentationStyle = .fullScreen
         self.currentController!.navigationController!.pushViewController(vc, animated: true)
     }

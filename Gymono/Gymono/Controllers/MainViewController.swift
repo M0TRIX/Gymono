@@ -14,11 +14,11 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mainViewModel = MainViewModel(context: self)
-        getListOfExersices()
+        getListOfExercises()
     }
     
-    func getListOfExersices(){
-        mainViewModel?.getExersiceInfo(complition: {[weak self] _ in
+    func getListOfExercises(){
+        mainViewModel?.getExerciseInfo(complition: {[weak self] _ in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -37,7 +37,7 @@ extension MainViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "exersiceTableViewCell",for:indexPath) as! ExersiceInfoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseTableViewCell",for:indexPath) as! ExerciseInfoTableViewCell
         cell.currentController = self
         cell.bind(object: self.mainViewModel?.exerciseList?.results?[indexPath.row] ?? "")
         return cell

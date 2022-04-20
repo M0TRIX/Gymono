@@ -12,9 +12,7 @@
 		E0301F422809F7C100E6FAE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0301F402809F7C100E6FAE0 /* Main.storyboard */; };
 		E0301F442809F7C400E6FAE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0301F432809F7C400E6FAE0 /* Assets.xcassets */; };
 		E0301F472809F7C400E6FAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0301F452809F7C400E6FAE0 /* LaunchScreen.storyboard */; };
-		E0301F522809F7C400E6FAE0 /* GymonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F512809F7C400E6FAE0 /* GymonoTests.swift */; };
-		E0301F5C2809F7C400E6FAE0 /* GymonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F5B2809F7C400E6FAE0 /* GymonoUITests.swift */; };
-		E0301F5E2809F7C400E6FAE0 /* GymonoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F5D2809F7C400E6FAE0 /* GymonoUITestsLaunchTests.swift */; };
+		E0301F5C2809F7C400E6FAE0 /* ExercisesListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F5B2809F7C400E6FAE0 /* ExercisesListUITests.swift */; };
 		E0301F6C2809FAEE00E6FAE0 /* CheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F6B2809FAEE00E6FAE0 /* CheckResponse.swift */; };
 		E0301F702809FB1700E6FAE0 /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F6E2809FB1700E6FAE0 /* ServiceApi.swift */; };
 		E0301F712809FB1700E6FAE0 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0301F6F2809FB1700E6FAE0 /* ServiceError.swift */; };
@@ -29,14 +27,19 @@
 		E03F6E64280E0B51006F8E2B /* VariationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03F6E63280E0B51006F8E2B /* VariationsTableViewCell.swift */; };
 		E063EA69280ECB110063D645 /* ExersiceDetialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */; };
 		E063EA6B280EE87F0063D645 /* VariationDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA6A280EE87F0063D645 /* VariationDetialViewController.swift */; };
+		E063EA6D280F4E7A0063D645 /* CheckResponseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA6C280F4E7A0063D645 /* CheckResponseTestCase.swift */; };
+		E063EA6F280F51280063D645 /* MainViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA6E280F51280063D645 /* MainViewModelTestCase.swift */; };
+		E063EA71280F51C10063D645 /* ServiceApiTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA70280F51C10063D645 /* ServiceApiTestCase.swift */; };
+		E063EA73280F529C0063D645 /* VariationViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063EA72280F529C0063D645 /* VariationViewModelTestCase.swift */; };
 		E07AEFD6280D7F5C00E4A11B /* ExerciseDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFD5280D7F5C00E4A11B /* ExerciseDetialViewController.swift */; };
 		E07AEFD8280D7FF400E4A11B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFD7280D7FF400E4A11B /* BaseViewController.swift */; };
 		E07AEFDC280D9B1300E4A11B /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFDB280D9B1300E4A11B /* BaseCollectionView.swift */; };
-		E07AEFDE280D9E4D00E4A11B /* ExersiceDetailCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFDD280D9E4D00E4A11B /* ExersiceDetailCollection.swift */; };
+		E07AEFDE280D9E4D00E4A11B /* ExerciseDetailCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AEFDD280D9E4D00E4A11B /* ExerciseDetailCollection.swift */; };
 		E07F7D54280AE2BB000C4890 /* ExercisesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */; };
 		E07F7D56280AE30A000C4890 /* ExerciseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F7D55280AE30A000C4890 /* ExerciseImage.swift */; };
 		E0A116BF280C2DF8004DCB41 /* ExerciseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */; };
-		E0A116C1280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */; };
+		E0A116C1280C31F0004DCB41 /* ExerciseInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A116C0280C31F0004DCB41 /* ExerciseInfoTableViewCell.swift */; };
+		E0E2A58D2810617700484955 /* VariationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2A58C2810617700484955 /* VariationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +68,8 @@
 		E0301F462809F7C400E6FAE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0301F482809F7C400E6FAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0301F4D2809F7C400E6FAE0 /* GymonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0301F512809F7C400E6FAE0 /* GymonoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymonoTests.swift; sourceTree = "<group>"; };
 		E0301F572809F7C400E6FAE0 /* GymonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0301F5B2809F7C400E6FAE0 /* GymonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymonoUITests.swift; sourceTree = "<group>"; };
-		E0301F5D2809F7C400E6FAE0 /* GymonoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymonoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0301F5B2809F7C400E6FAE0 /* ExercisesListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListUITests.swift; sourceTree = "<group>"; };
 		E0301F6B2809FAEE00E6FAE0 /* CheckResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckResponse.swift; sourceTree = "<group>"; };
 		E0301F6E2809FB1700E6FAE0 /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		E0301F6F2809FB1700E6FAE0 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
@@ -83,14 +84,19 @@
 		E03F6E63280E0B51006F8E2B /* VariationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsTableViewCell.swift; sourceTree = "<group>"; };
 		E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceDetialViewModel.swift; sourceTree = "<group>"; };
 		E063EA6A280EE87F0063D645 /* VariationDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationDetialViewController.swift; sourceTree = "<group>"; };
+		E063EA6C280F4E7A0063D645 /* CheckResponseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResponseTestCase.swift; sourceTree = "<group>"; };
+		E063EA6E280F51280063D645 /* MainViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTestCase.swift; sourceTree = "<group>"; };
+		E063EA70280F51C10063D645 /* ServiceApiTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApiTestCase.swift; sourceTree = "<group>"; };
+		E063EA72280F529C0063D645 /* VariationViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationViewModelTestCase.swift; sourceTree = "<group>"; };
 		E07AEFD5280D7F5C00E4A11B /* ExerciseDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetialViewController.swift; sourceTree = "<group>"; };
 		E07AEFD7280D7FF400E4A11B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E07AEFDB280D9B1300E4A11B /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
-		E07AEFDD280D9E4D00E4A11B /* ExersiceDetailCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceDetailCollection.swift; sourceTree = "<group>"; };
+		E07AEFDD280D9E4D00E4A11B /* ExerciseDetailCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailCollection.swift; sourceTree = "<group>"; };
 		E07F7D53280AE2BB000C4890 /* ExercisesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesInfo.swift; sourceTree = "<group>"; };
 		E07F7D55280AE30A000C4890 /* ExerciseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImage.swift; sourceTree = "<group>"; };
 		E0A116BE280C2DF8004DCB41 /* ExerciseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfo.swift; sourceTree = "<group>"; };
-		E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersiceInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E0A116C0280C31F0004DCB41 /* ExerciseInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E0E2A58C2810617700484955 /* VariationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +167,10 @@
 		E0301F502809F7C400E6FAE0 /* GymonoTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0301F512809F7C400E6FAE0 /* GymonoTests.swift */,
+				E063EA70280F51C10063D645 /* ServiceApiTestCase.swift */,
+				E063EA6C280F4E7A0063D645 /* CheckResponseTestCase.swift */,
+				E063EA6E280F51280063D645 /* MainViewModelTestCase.swift */,
+				E063EA72280F529C0063D645 /* VariationViewModelTestCase.swift */,
 			);
 			path = GymonoTests;
 			sourceTree = "<group>";
@@ -169,8 +178,7 @@
 		E0301F5A2809F7C400E6FAE0 /* GymonoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E0301F5B2809F7C400E6FAE0 /* GymonoUITests.swift */,
-				E0301F5D2809F7C400E6FAE0 /* GymonoUITestsLaunchTests.swift */,
+				E0301F5B2809F7C400E6FAE0 /* ExercisesListUITests.swift */,
 			);
 			path = GymonoUITests;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			children = (
 				E0301FA52809FC1E00E6FAE0 /* MainViewModel.swift */,
 				E063EA68280ECB110063D645 /* ExersiceDetialViewModel.swift */,
+				E0E2A58C2810617700484955 /* VariationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -272,7 +281,7 @@
 		E07AEFD9280D9AD800E4A11B /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				E0A116C0280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift */,
+				E0A116C0280C31F0004DCB41 /* ExerciseInfoTableViewCell.swift */,
 				E03F6E63280E0B51006F8E2B /* VariationsTableViewCell.swift */,
 			);
 			path = TableViewCells;
@@ -281,7 +290,7 @@
 		E07AEFDA280D9AE500E4A11B /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				E07AEFDD280D9E4D00E4A11B /* ExersiceDetailCollection.swift */,
+				E07AEFDD280D9E4D00E4A11B /* ExerciseDetailCollection.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -418,7 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0301F712809FB1700E6FAE0 /* ServiceError.swift in Sources */,
-				E0A116C1280C31F0004DCB41 /* ExersiceInfoTableViewCell.swift in Sources */,
+				E0A116C1280C31F0004DCB41 /* ExerciseInfoTableViewCell.swift in Sources */,
 				E0301FAD2809FC3900E6FAE0 /* MainViewController.swift in Sources */,
 				E07F7D56280AE30A000C4890 /* ExerciseImage.swift in Sources */,
 				E063EA6B280EE87F0063D645 /* VariationDetialViewController.swift in Sources */,
@@ -433,13 +442,14 @@
 				E07F7D54280AE2BB000C4890 /* ExercisesInfo.swift in Sources */,
 				E0301F7F2809FB3600E6FAE0 /* Extenstions.swift in Sources */,
 				E0A116BF280C2DF8004DCB41 /* ExerciseInfo.swift in Sources */,
+				E0E2A58D2810617700484955 /* VariationViewModel.swift in Sources */,
 				E0301FA62809FC1E00E6FAE0 /* MainViewModel.swift in Sources */,
 				E0301F812809FB3600E6FAE0 /* MessageUtill.swift in Sources */,
 				E063EA69280ECB110063D645 /* ExersiceDetialViewModel.swift in Sources */,
 				E03F6E64280E0B51006F8E2B /* VariationsTableViewCell.swift in Sources */,
 				E0301F702809FB1700E6FAE0 /* ServiceApi.swift in Sources */,
 				E0301F7E2809FB3600E6FAE0 /* ViewExtenstions.swift in Sources */,
-				E07AEFDE280D9E4D00E4A11B /* ExersiceDetailCollection.swift in Sources */,
+				E07AEFDE280D9E4D00E4A11B /* ExerciseDetailCollection.swift in Sources */,
 				E07AEFD6280D7F5C00E4A11B /* ExerciseDetialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0301F522809F7C400E6FAE0 /* GymonoTests.swift in Sources */,
+				E063EA6D280F4E7A0063D645 /* CheckResponseTestCase.swift in Sources */,
+				E063EA71280F51C10063D645 /* ServiceApiTestCase.swift in Sources */,
+				E063EA6F280F51280063D645 /* MainViewModelTestCase.swift in Sources */,
+				E063EA73280F529C0063D645 /* VariationViewModelTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0301F5C2809F7C400E6FAE0 /* GymonoUITests.swift in Sources */,
-				E0301F5E2809F7C400E6FAE0 /* GymonoUITestsLaunchTests.swift in Sources */,
+				E0301F5C2809F7C400E6FAE0 /* ExercisesListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,17 +20,17 @@ class MainViewModel {
     
     init() {}
     
-    func getExersiceInfo(complition:@escaping(ExerciseInfo)->()){
+    func getExerciseInfo(complition:@escaping(ExerciseInfo)->()){
         
-        ServiceApi.shared.getListOfExersiceInfo { [weak self] exersice,response,data  in
+        ServiceApi.shared.getListOfExerciseInfo { [weak self] exercise,response,data  in
             
             let error = ServiceValidator.checkResposnse(response: response, data: data)
             
             if error == ServiceError.SUCCESS {
                 self?.exerciseList = ExerciseInfo()
                 self?.exerciseList?.results = []
-                self?.exerciseList?.results = exersice.results
-                complition(exersice)
+                self?.exerciseList?.results = exercise.results
+                complition(exercise)
             }else{
                 MessageUtill.makeMessage(title: "Network call error", body: "\(error)", controller: self?.controller ?? UIViewController())
             }

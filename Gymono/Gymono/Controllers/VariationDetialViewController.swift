@@ -8,12 +8,13 @@
 import UIKit
 
 class VariationDetialViewController: BaseViewController {
-
+    
     @IBOutlet weak var variationName: UILabel!
     @IBOutlet weak var variationImage: UIImageView!
     @IBOutlet weak var variationDescription: UILabel!
     
-    var exercisesInfoList:ExercisesInfo?
+    var varId:Int?
+    var variationViewModel:VariationViewModel?
     
     static func createInstance()->VariationDetialViewController{
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -23,15 +24,20 @@ class VariationDetialViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let imageUrl = exercisesInfoList?.images?.first?.image ?? ""
         
-        variationName.text = exercisesInfoList?.name
-        variationImage.image = imageUrl != "" ? ImageTools.loadMyImage(urlString: exercisesInfoList?.images?.first?.image ?? "") : UIImage(named: "placeholder")
-        variationDescription.text = stringFormater(desciption: exercisesInfoList?.resultDescription ?? "")
+        getExerciseById()
     }
-  
-    func stringFormater(desciption:String)->String{
-        return (desciption.replacingOccurrences(of: "</p>", with: "").replacingOccurrences(of: "<p>", with: "").replacingOccurrences(of: "<li>", with: "").replacingOccurrences(of: "</li>", with: "").replacingOccurrences(of: "</ul>", with: "").replacingOccurrences(of: "<ul>", with: ""))
+    
+    func getExerciseById(){
+        variationViewModel?.getExerciseInfoById(variationId: self.varId ?? 0, complition: { exercise in
+            DispatchQueue.main.async {
+                let imageUrl = self.variationViewModel?.exercise?.images?.first?.image ?? ""
+                self.variationName.text = self.variationViewModel?.exercise?.name
+                self.variationImage.image = imageUrl != "" ? ImageTools.loadMyImage(urlString: imageUrl) : UIImage(named: "placeholder")
+                self.variationDescription.text = (self.variationViewModel?.exercise?.resultDescription ?? "").stringFormater
+            }
+        })
     }
+    
+ 
 }

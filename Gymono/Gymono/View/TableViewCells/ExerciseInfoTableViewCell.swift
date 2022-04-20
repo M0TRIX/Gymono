@@ -1,5 +1,4 @@
 //
-//  ExersiceTableViewCell.swift
 //  Gymono
 //
 //  Created by Ali Asadi on 1/28/1401 AP.
@@ -8,10 +7,10 @@
 import Foundation
 import UIKit
 
-class ExersiceInfoTableViewCell:BaseTableViewCell{
+class ExerciseInfoTableViewCell:BaseTableViewCell{
     
     @IBOutlet weak var title:UILabel!
-    @IBOutlet weak var exersiceImage:UIImageView!
+    @IBOutlet weak var exerciseImage:UIImageView!
     
     var content:ExercisesInfo?
     
@@ -21,7 +20,7 @@ class ExersiceInfoTableViewCell:BaseTableViewCell{
         title.text = content?.name
         
         DispatchQueue.main.async {
-            self.exersiceImage.image = (self.content?.images?.count ?? 0 > 0) ? ImageTools.loadMyImage(urlString: (self.content?.images?.first?.image ?? ""))  : UIImage(named: "placeholder")
+            self.exerciseImage.image = (self.content?.images?.count ?? 0 > 0) ? ImageTools.loadMyImage(urlString: (self.content?.images?.first?.image ?? ""))  : UIImage(named: "placeholder")
         }
     }
     
@@ -32,7 +31,7 @@ class ExersiceInfoTableViewCell:BaseTableViewCell{
     override func forwardAction() {
         let vc = ExerciseDetialViewController.createInstance()
         vc.exercisesInfoList = content
-        vc.exercisesViewModel = ExersiceDetailViewModel(context: vc)
+        vc.exercisesViewModel = ExerciseDetailViewModel(context: vc)
         vc.modalPresentationStyle = .fullScreen
         self.currentController!.navigationController!.pushViewController(vc, animated: true)
     }

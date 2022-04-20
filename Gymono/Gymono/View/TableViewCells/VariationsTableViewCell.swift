@@ -10,14 +10,14 @@ import UIKit
 
 class VariationsTableViewCell:BaseTableViewCell{
     
-   @IBOutlet weak var variationsTitle:UILabel!
+    @IBOutlet weak var variationsTitle:UILabel!
     
-    var content:ExercisesInfo?
+    var varId:Int?
     
     override func bind(object: Any?) {
         super.bind(object: nil)
-        content = object as? ExercisesInfo
-        variationsTitle.text = content?.name
+        varId = object as? Int
+        variationsTitle.text = "\(object ?? 0)"
     }
     
     override func setListerners() {
@@ -26,7 +26,8 @@ class VariationsTableViewCell:BaseTableViewCell{
     
     override func forwardAction() {
         let vc = VariationDetialViewController.createInstance()
-        vc.exercisesInfoList = content
+        vc.varId = varId
+        vc.variationViewModel = VariationViewModel(context: vc)
         vc.modalPresentationStyle = .fullScreen
         self.currentController!.navigationController!.pushViewController(vc, animated: true)
     }

@@ -17,3 +17,9 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension String{
+    var stringFormater:String{
+        return (self.replacingOccurrences(of: "</p>", with: "").replacingOccurrences(of: "<p>", with: "").replacingOccurrences(of: "<li>", with: "").replacingOccurrences(of: "</li>", with: "").replacingOccurrences(of: "</ul>", with: "").replacingOccurrences(of: "<ul>", with: ""))
+    }
+}

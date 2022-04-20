@@ -21,22 +21,45 @@ by clicking at arrow at the bottom of each cell you can see the details
 
 <img src="https://github.com/M0TRIX/Gymono/blob/main/gymono2.png">
 
-we have a list of exercise id'es which is called variations that i need to show them in next page,I have two choose to do that
+we have a list of exercise id'es which is called variations that i need to show them in next page,I have three choose to do that
 
 - make a network call for each variation id
 - make one network call and fetch all data and then find the proper objects from it
+- show variation id'es in a tableView
 
-I chosed second method because making a lot of network request causes server crash.
+first approach :
 
-pros and cons of fisst method :
+pros :
+- Get each object and show the name of exercise
+- No need to network call in next page
 
-pros:
+cons:
+- Making lots of network call may cause a server crash
+- No expandable apporach in big data
 
--Not using server resources
+second apporach :
 
-cons :
+pros :
+- I have all data in once and I can find my variation from it to show
+- No need to network call in next page
 
-- takes time to get all data and find variations from it,you need to wait to see the result
+cons:
+- takes 15 seconds to get all data (419 objects) and user must wait to see the variations
+- Not possible in big data's
+
+
+third apporach :
+
+pros :
+- No need to make network call
+- proper performance and not getting involve with resources
+- No server crash and No boring waiting
+
+cons:
+
+- No proper UI
+
+so based on these pros and cons I've chosen third method
 
 # Suggestion
 

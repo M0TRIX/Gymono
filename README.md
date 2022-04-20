@@ -37,7 +37,7 @@ cons:
 - Making lots of network call may cause a server crash
 - No expandable apporach in big data
 
-second apporach :
+## second apporach :
 
 pros :
 - I have all data in once and I can find my variation from it to show
@@ -48,7 +48,7 @@ cons:
 - Not possible in big data's
 
 
-third apporach :
+## third apporach :
 
 pros :
 - No need to make network call

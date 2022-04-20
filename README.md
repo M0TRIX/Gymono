@@ -52,7 +52,7 @@ cons:
 
 pros :
 - No need to make network call
-- proper performance and not getting involve with resources
+- proper performance and not getting involved with resources
 - No server crash and No boring waiting
 
 cons:

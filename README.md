@@ -27,7 +27,7 @@ we have a list of exercise id'es which is called variations that i need to show 
 - make one network call and fetch all data and then find the proper objects from it
 - show variation id'es in a tableView
 
-first approach :
+# first approach :
 
 pros :
 - Get each object and show the name of exercise
